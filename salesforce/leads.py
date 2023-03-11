@@ -1,18 +1,23 @@
 # lead-crm-library/salesforce/leads.py
 
-from .auth import authenticate
+from .auth import SalesforceAuth
 from .exceptions import SalesforceError
 from .utils import normalize_lead_data
 
-def add_lead(name, email, phone, car_model, suspension_type, payment_method, contact_preferred_time):
-    try:
-        sfClient = authenticate("username", "password", "security_token")
+class SalesforceLeads:
+    def __init__(self, auth):
+        self.auth = auth
+    
+    def add_lead(self, lead_data):
+        try:
+            # Autenticarse con las credenciales del objeto auth
+            sfClient = self.auth.authenticate()
 
-        # Normalizar los datos del lead antes de agregarlos a Salesforce
-        normalized_data = normalize_lead_data(name, email, phone, car_model, suspension_type, payment_method, contact_preferred_time)
+            # Normalizar los datos del lead antes de agregarlos a Salesforce
+            normalized_data = normalize_lead_data(lead_data)
 
-        # Código para agregar un lead a Salesforce usando el token de acceso y los datos normalizados
-        sfClient.Lead.create(normalized_data)
+            # Código para agregar un lead a Salesforce usando el token de acceso y los datos normalizados
+            sfClient.Lead.create(normalized_data)
 
-    except Exception as e:
-        raise SalesforceError(f"Error al agregar lead a Salesforce: {str(e)}")
+        except Exception as e:
+            raise SalesforceError(f"Error al agregar lead a Salesforce: {str(e)}")
