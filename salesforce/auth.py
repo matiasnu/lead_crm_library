@@ -1,6 +1,7 @@
 # lead-crm-library/salesforce/auth.py
 from simple_salesforce import Salesforce
 
+
 class SalesforceAuth:
     def __init__(self, username, password, security_token):
         self.username = username

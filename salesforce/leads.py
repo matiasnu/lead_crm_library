@@ -1,13 +1,13 @@
 # lead-crm-library/salesforce/leads.py
 
-from .auth import SalesforceAuth
 from .exceptions import SalesforceError
 from .utils import normalize_lead_data
+
 
 class SalesforceLeads:
     def __init__(self, auth):
         self.auth = auth
-    
+
     def add_lead(self, lead_data):
         try:
             # Autenticarse con las credenciales del objeto auth
