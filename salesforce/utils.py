@@ -1,4 +1,4 @@
-# lead-crm-library/salesforce/utils.py
+# lead_crm_library/salesforce/utils.py
 
 def normalize_lead_data(lead_data, mapping):
     normalized_data = {}

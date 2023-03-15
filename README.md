@@ -1,8 +1,8 @@
-# lead-crm-library
+# Lead CRM Library
 Save Leads CRM Library
 
 ### Install
-```pip install lead-crm-library```
+```pip install lead_crm_library```
 
 ### How to use
 #### Salesforce

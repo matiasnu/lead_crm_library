@@ -1,4 +1,4 @@
-# lead-crm-library/hubspot/leads.py
+# lead_crm_library/hubspot/leads.py
 
 from .auth import HubspotAuth
 from .exceptions import HubspotError

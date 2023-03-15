@@ -1,4 +1,4 @@
-# lead-crm-library/salesforce/auth.py
+# lead_crm_library/salesforce/auth.py
 from simple_salesforce import Salesforce
 
 

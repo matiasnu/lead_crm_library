@@ -1,4 +1,4 @@
-# lead-crm-library/hubspot/auth.py
+# lead_crm_library/hubspot/auth.py
 from hubspot import HubSpot
 
 class HubspotAuth:

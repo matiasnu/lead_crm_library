@@ -1,4 +1,4 @@
-# lead-crm-library/hubspot/utils.py
+# lead_crm_library/hubspot/utils.py
 
 # TODO utils generic? 
 def normalize_lead_data(lead_data, mapping):

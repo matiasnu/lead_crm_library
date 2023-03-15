@@ -1,4 +1,4 @@
-# lead-crm-library/salesforce/leads.py
+# lead_crm_library/salesforce/leads.py
 
 from .exceptions import SalesforceError
 from .utils import normalize_lead_data
