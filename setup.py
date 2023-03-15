@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lead_crm_library',
-    version='0.0.6',
+    version='0.0.7',
     description='A library for managing generic leads in CRMs',
     author='Matias Nuñez',
     author_email='matiasne45@gmail.com',
