@@ -10,5 +10,6 @@ class SalesforceAuth:
 
     def authenticate(self):
         # Código para autenticarse con Salesforce usando credenciales de usuario y un token de seguridad
-        f = Salesforce(username=self.username, password=self.password, security_token=self.security_token)
+        f = Salesforce(username=self.username, password=self.password,
+                       security_token=self.security_token)
         return f
