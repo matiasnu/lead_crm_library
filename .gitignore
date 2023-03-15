@@ -1,5 +1,5 @@
 lead_crm_library.egg-info/
 build/
 dist/
-.DS_Store/
+.DS_Store
 .idea/
